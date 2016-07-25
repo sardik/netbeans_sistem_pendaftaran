@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="380" pageHeight="350" columnWidth="340" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="95944abd-65b6-4bb3-8927-70b5e66923e4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="17"/>
+	<parameter name="idkartu" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from tblkartu ]]>
+	</queryString>
+	<field name="ID_Kartu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_Pendaftar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Lengkap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jurusan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ruang_tes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Waktu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="84" y="12" width="167" height="22" uuid="0c13114f-eacd-41da-85c2-a02cc8e26172"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[KARTU TES SELEKSI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="241" splitType="Stretch">
+			<staticText>
+				<reportElement x="62" y="18" width="100" height="20" uuid="a3762378-4f73-4edb-880d-556e02c99433"/>
+				<text><![CDATA[ID_Kartu]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="18" width="100" height="20" uuid="5095196d-2072-4827-9a20-c905150ee57b"/>
+				<textFieldExpression><![CDATA[$F{ID_Kartu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="49" width="100" height="20" uuid="86f59ec0-445c-49ec-adb6-13afe14c3cc8"/>
+				<text><![CDATA[ID_Pendaftar]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="49" width="100" height="20" uuid="e0bb1202-71a3-4ce7-b4a9-a5cd8b6351fe"/>
+				<textFieldExpression><![CDATA[$F{ID_Pendaftar}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="82" width="100" height="20" uuid="c563764e-0f41-43f5-ad4f-2f4abce56b07"/>
+				<text><![CDATA[Nama_Lengkap]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="82" width="100" height="20" uuid="a003f395-30fd-4108-a880-c1bfb0bb9905"/>
+				<textFieldExpression><![CDATA[$F{Nama_Lengkap}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="113" width="100" height="20" uuid="0614b674-2503-4c41-be91-df109d87e25c"/>
+				<text><![CDATA[Jurusan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="113" width="100" height="20" uuid="b3794380-f908-4dc5-8896-cdd750ea11a7"/>
+				<textFieldExpression><![CDATA[$F{Jurusan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="144" width="100" height="20" uuid="59548326-6325-4eba-aaa4-9e6db79e6a90"/>
+				<text><![CDATA[Ruang_tes]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="144" width="100" height="20" uuid="7a2d871f-c542-4c5a-a205-48e1eb8bd67b"/>
+				<textFieldExpression><![CDATA[$F{Ruang_tes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="178" width="100" height="20" uuid="61e77c5f-c377-406f-95ce-3390bea8d1bb"/>
+				<text><![CDATA[Waktu]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="178" width="100" height="20" uuid="cad4893a-2825-4288-b823-d38ef0a00921"/>
+				<textFieldExpression><![CDATA[$F{Waktu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="62" y="210" width="100" height="20" uuid="e0edd954-1ff8-43fc-946c-9c312c3b2089"/>
+				<text><![CDATA[Jam]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="162" y="210" width="100" height="20" uuid="661d1139-4a70-4201-825f-9dd32e7dea7c"/>
+				<textFieldExpression><![CDATA[$F{Jam}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

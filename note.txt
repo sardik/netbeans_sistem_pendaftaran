@@ -1,0 +1,15 @@
+1. Install Plugin Jasper Report. ( Tersedia )
+2. Add libraries jasperreports 5.6.0 libraries ada di dalam project.
+3. Add libraries common logging & common collection ( Tersedia )
+4. Buang database lama, ganti dengan yang baru ( tersedia )
+
+5. buat koneksi baru di netbeans, ada di menubar, 
+	 icon botol yang ada kunci pasnya. 
+	pilih new -> Database JDBC connection -> buat name "koneksi"
+	pilih MySQL (com.mysql.jdbc.Driver)
+	jdbc:mysql://localhost/DatabaseName ganti jadi jdbc:mysql://localhost/sistempendaftaran
+	isi username "root"
+	password kosongin
+	save password ceklist ->save
+
+6. disebelah icon botol lu pilih koneksi yang udah lu buat.
